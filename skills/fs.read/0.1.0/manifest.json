@@ -1,0 +1,15 @@
+{
+  "name": "fs.read",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:cbf3d6e2c7ec85aa216b8e4c8d2de6fc56ec463eb6f1e2e8c9eab662a67cc20d",
+  "capabilities": [
+    {
+      "kind": "fs.read",
+      "value": "/tmp/inactu-fs"
+    }
+  ],
+  "signers": [
+    "alice.dev"
+  ]
+}

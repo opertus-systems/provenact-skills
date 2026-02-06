@@ -1,0 +1,10 @@
+{
+  "name": "receipt.verify",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:f6d3fe5dd4c11800a53289471930883ec7844ecd4a245f0c5829c5d77bd62b16",
+  "capabilities": [],
+  "signers": [
+    "alice.dev"
+  ]
+}

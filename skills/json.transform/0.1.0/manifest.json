@@ -1,0 +1,10 @@
+{
+  "name": "json.transform",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:bdb097de80dc214c35838d297f5f8170dd95be491dd912c59c5fed6539c1500b",
+  "capabilities": [],
+  "signers": [
+    "alice.dev"
+  ]
+}

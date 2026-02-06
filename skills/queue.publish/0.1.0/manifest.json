@@ -1,0 +1,15 @@
+{
+  "name": "queue.publish",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:bb24644567a64df0f357530d577b91ef852cf30093b6cc143f3a726dfa4ce357",
+  "capabilities": [
+    {
+      "kind": "queue.publish",
+      "value": "*"
+    }
+  ],
+  "signers": [
+    "alice.dev"
+  ]
+}

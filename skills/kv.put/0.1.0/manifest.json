@@ -1,0 +1,15 @@
+{
+  "name": "kv.put",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:3f837ac582b48421dce3fda6242e1a195f0811b12fa85f7504407de1835fb4a5",
+  "capabilities": [
+    {
+      "kind": "kv.write",
+      "value": "*"
+    }
+  ],
+  "signers": [
+    "alice.dev"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "random.bytes",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:b20169ce87d268995b3a0373b38c8c492044e6d46b3bdd749d0e36483f804a8b",
+  "capabilities": [
+    {
+      "kind": "random.bytes",
+      "value": "bounded"
+    }
+  ],
+  "signers": [
+    "alice.dev"
+  ]
+}

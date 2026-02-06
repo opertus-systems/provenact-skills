@@ -1,0 +1,15 @@
+{
+  "name": "fs.write",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:efab24d6b9b2031e6244084b8f356e7294a5e7c881870a2fa8f7f4f166456f85",
+  "capabilities": [
+    {
+      "kind": "fs.write",
+      "value": "/tmp/inactu-fs"
+    }
+  ],
+  "signers": [
+    "alice.dev"
+  ]
+}

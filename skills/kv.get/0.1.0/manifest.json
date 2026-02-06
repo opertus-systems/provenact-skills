@@ -1,0 +1,15 @@
+{
+  "name": "kv.get",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:13c4a29783b1e72cfa4e39d204604319010769c6a79107b56d1197a0bf26ad1a",
+  "capabilities": [
+    {
+      "kind": "kv.read",
+      "value": "*"
+    }
+  ],
+  "signers": [
+    "alice.dev"
+  ]
+}

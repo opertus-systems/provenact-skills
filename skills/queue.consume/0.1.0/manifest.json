@@ -1,0 +1,15 @@
+{
+  "name": "queue.consume",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:211f3808d825332ebe1f62dc69ac601622033b9d6b44fd79ca706080b2fcbd71",
+  "capabilities": [
+    {
+      "kind": "queue.consume",
+      "value": "*"
+    }
+  ],
+  "signers": [
+    "alice.dev"
+  ]
+}

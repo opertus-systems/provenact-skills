@@ -1,0 +1,51 @@
+name: Verify Pins
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      inactu_repo:
+        description: "Optional owner/repo for substrate checkout (defaults to <this-owner>/inactu)"
+        required: false
+        type: string
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout skills repo
+        uses: actions/checkout@v4
+
+      - name: Resolve inactu repository
+        id: repo
+        shell: bash
+        run: |
+          if [ -n "${{ inputs.inactu_repo }}" ]; then
+            echo "repo=${{ inputs.inactu_repo }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "repo=${{ github.repository_owner }}/inactu" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout substrate
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ steps.repo.outputs.repo }}
+          path: inactu
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build inactu-cli
+        working-directory: inactu
+        run: cargo build -p inactu-cli
+
+      - name: Verify lockfile pins
+        env:
+          INACTU_CLI_BIN: ${{ github.workspace }}/inactu/target/debug/inactu-cli
+        run: make verify-pins

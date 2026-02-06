@@ -1,0 +1,10 @@
+{
+  "name": "retry.with_backoff",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:0a3f23e377912f8b3f0bf57b0caca2d9ec480d13804509f159e113b0ae5186f0",
+  "capabilities": [],
+  "signers": [
+    "alice.dev"
+  ]
+}

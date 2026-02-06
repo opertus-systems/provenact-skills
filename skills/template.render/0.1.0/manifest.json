@@ -1,0 +1,10 @@
+{
+  "name": "template.render",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:59591a71107ed956736611604b4a51931b19441af57f46ebfa2b54b834ca5b53",
+  "capabilities": [],
+  "signers": [
+    "alice.dev"
+  ]
+}

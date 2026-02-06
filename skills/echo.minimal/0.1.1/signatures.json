@@ -1,0 +1,11 @@
+{
+  "artifact": "sha256:2dcb7991c5c820a0874c03079e59ce082d214fcf5a2442f8baa7ea23885489cf",
+  "manifest_hash": "sha256:0350d023c16731f421b4af9e196fcb775aa12b487a7ce3d2792224a401dd17ab",
+  "signatures": [
+    {
+      "signer": "alice.dev",
+      "algorithm": "ed25519",
+      "signature": "uW1gvvJCnjS6o/1Ch4AzzVVnIVTtfsd7AleJYCpx45ahmuEaa8pVM7d5FtzXuq1wWoJ3FQSfuMQdtF14iQ7UDw=="
+    }
+  ]
+}

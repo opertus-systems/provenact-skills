@@ -1,0 +1,15 @@
+{
+  "name": "http.fetch",
+  "version": "0.1.0",
+  "entrypoint": "run",
+  "artifact": "sha256:1139870e11cde68e584b9931d1852b6a2a6fa58ff7cfec066cf219fe40e2dada",
+  "capabilities": [
+    {
+      "kind": "net.http",
+      "value": "https://example.com/"
+    }
+  ],
+  "signers": [
+    "alice.dev"
+  ]
+}
