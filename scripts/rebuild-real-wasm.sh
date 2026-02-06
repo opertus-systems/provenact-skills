@@ -6,26 +6,9 @@ INACTU_CLI_BIN="${INACTU_CLI_BIN:-}"
 SIGNER_ID="${SIGNER_ID:-alice.dev}"
 SECRET_KEY="${SECRET_KEY:-$ROOT_DIR/../inactu/test-vectors/good/verify-run-verify-receipt/signer-secret-key.txt}"
 WATC_MANIFEST="${WATC_MANIFEST:-$ROOT_DIR/tools/watc/Cargo.toml}"
+source "$ROOT_DIR/scripts/lib/inactu_cli.sh"
 
-if [[ -z "$INACTU_CLI_BIN" ]]; then
-  if command -v inactu-cli >/dev/null 2>&1; then
-    INACTU_CLI_BIN="inactu-cli"
-  elif [[ -x "$ROOT_DIR/../inactu/target/debug/inactu-cli" ]]; then
-    INACTU_CLI_BIN="$ROOT_DIR/../inactu/target/debug/inactu-cli"
-  elif [[ -d "$ROOT_DIR/../inactu" ]]; then
-    echo "building sibling inactu-cli..." >&2
-    cargo build -p inactu-cli --manifest-path "$ROOT_DIR/../inactu/Cargo.toml" >/dev/null
-    INACTU_CLI_BIN="$ROOT_DIR/../inactu/target/debug/inactu-cli"
-  else
-    echo "error: inactu-cli not found (set INACTU_CLI_BIN or provide ../inactu checkout)" >&2
-    exit 1
-  fi
-fi
-
-if ! command -v "$INACTU_CLI_BIN" >/dev/null 2>&1 && [[ ! -x "$INACTU_CLI_BIN" ]]; then
-  echo "error: configured INACTU_CLI_BIN is not executable: $INACTU_CLI_BIN" >&2
-  exit 1
-fi
+resolve_inactu_cli "$ROOT_DIR"
 if [[ ! -f "$SECRET_KEY" ]]; then
   echo "error: secret key not found: $SECRET_KEY" >&2
   exit 1
