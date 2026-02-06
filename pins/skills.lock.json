@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-02-06T19:10:18.777Z",
+  "generated_at": "2026-02-06T23:20:50.827Z",
   "substrate_pin": {
     "repo": "inactu",
-    "commit": "33822aab5eb635f2d0f5bbc6859543f29906cbcf"
+    "commit": "9e8a46488a4690388fb430c78d08b4ca3cff4325"
   },
   "skills": [
     {
@@ -11,11 +11,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/echo.minimal/0.1.0",
       "artifact": "sha256:2dcb7991c5c820a0874c03079e59ce082d214fcf5a2442f8baa7ea23885489cf",
-      "manifest_hash": "sha256:9b64587d2b3cd674627e3b94d8f488590fabbe3cd2d2905da18311b75fe2e26f",
+      "manifest_hash": "sha256:3321d840f7a45aadbc4d1017b7c611a2717cbd27fc7706268948ee2e5ac8e9f5",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -23,11 +24,12 @@
       "version": "0.1.1",
       "bundle_dir": "skills/echo.minimal/0.1.1",
       "artifact": "sha256:2dcb7991c5c820a0874c03079e59ce082d214fcf5a2442f8baa7ea23885489cf",
-      "manifest_hash": "sha256:0350d023c16731f421b4af9e196fcb775aa12b487a7ce3d2792224a401dd17ab",
+      "manifest_hash": "sha256:a5adda582a565a6a52b03cbd7f2116cd3a5701339c20d260b0c53c6ae64da7bf",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -35,11 +37,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/fs.read/0.1.0",
       "artifact": "sha256:cbf3d6e2c7ec85aa216b8e4c8d2de6fc56ec463eb6f1e2e8c9eab662a67cc20d",
-      "manifest_hash": "sha256:67a110045ac385fa74990b3ae43b6dc2fb66d442b5aafb4a9085bd1eeb1bdcba",
+      "manifest_hash": "sha256:69f2fc7328281259a8a8e7f1d19c36d95f0b9105d721f21fc300a9ee2eaccf1c",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -47,11 +50,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/fs.write/0.1.0",
       "artifact": "sha256:efab24d6b9b2031e6244084b8f356e7294a5e7c881870a2fa8f7f4f166456f85",
-      "manifest_hash": "sha256:c4c068f00c0cceb871fa485b27dd664555a33cd45284bdd66633b5312f14ec4d",
+      "manifest_hash": "sha256:7918f536959966512eb2578c258da446e4a1fdae9000a67aad1b9f7c189c08a4",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -59,11 +63,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/hash.sha256/0.1.0",
       "artifact": "sha256:bfd6e532f41e1768e62b135f3624339d12a8ff7cc8b0a2c0dcba9ad2037b668d",
-      "manifest_hash": "sha256:eb03229229f5fa8052d5eb9ba64bee264a5441af2c3ef16e4607329f8dbe60fa",
+      "manifest_hash": "sha256:b90213c8fd2d198c24d89e718fa5823e0c79fd4b2242c9f432ebe9c1939da23b",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -71,11 +76,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/http.fetch/0.1.0",
       "artifact": "sha256:1139870e11cde68e584b9931d1852b6a2a6fa58ff7cfec066cf219fe40e2dada",
-      "manifest_hash": "sha256:111eac8dcaacfe08c7eb3688735fa1aba1fe098682f68eb485e7f5bb8e9a43b1",
+      "manifest_hash": "sha256:96fb61ca72633fc4ece006d345278477bdd1afd50e0c4e6083b1cab0c8065670",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -83,11 +89,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/json.transform/0.1.0",
       "artifact": "sha256:bdb097de80dc214c35838d297f5f8170dd95be491dd912c59c5fed6539c1500b",
-      "manifest_hash": "sha256:586e6b980c415efc537f6e794499543395a5cdb0126d39597d690eded26d6de3",
+      "manifest_hash": "sha256:5d4e92fac885faaf4c07d461a67986454ad63871ce902c957641f77912a35130",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -95,11 +102,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/kv.get/0.1.0",
       "artifact": "sha256:13c4a29783b1e72cfa4e39d204604319010769c6a79107b56d1197a0bf26ad1a",
-      "manifest_hash": "sha256:82a51da52c87732e78f87e186fa6100811f95378479585ed4ab73d3143b6ae18",
+      "manifest_hash": "sha256:c62dc8605edbf2ada646de42ad07303670c37e4dc7481e7a605d82b9887f9392",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -107,11 +115,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/kv.put/0.1.0",
       "artifact": "sha256:3f837ac582b48421dce3fda6242e1a195f0811b12fa85f7504407de1835fb4a5",
-      "manifest_hash": "sha256:5db31eacb9d94a1f521218dadabb2a854158d8b00925b451f7266629024fd51e",
+      "manifest_hash": "sha256:45f5f9ff232c297c0cc509bfdd5386ffa58148fcfbd1cebc9b514c2efb1aa79e",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -119,11 +128,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/policy.eval/0.1.0",
       "artifact": "sha256:1b8316875d8cd9ce13becc4255f88b094c8b012c1eca783f69721321ec634b18",
-      "manifest_hash": "sha256:fe195d3cc5ae4c98ffe1d6b48032027cefa93d54204416d914662f2b2491a1e7",
+      "manifest_hash": "sha256:5ab320a4f260e6034d2cfdb8b6fb595e092945e3a920e32af83840b51103acff",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -131,11 +141,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/queue.consume/0.1.0",
       "artifact": "sha256:211f3808d825332ebe1f62dc69ac601622033b9d6b44fd79ca706080b2fcbd71",
-      "manifest_hash": "sha256:10a22a43cb75133b895a88c835590faa7765ed7cb71165c7e1d9c232904db1ee",
+      "manifest_hash": "sha256:d137a66538a5d7868fe334c7ca8e4cb66fce73008b594d5e12572dbf20679842",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -143,11 +154,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/queue.publish/0.1.0",
       "artifact": "sha256:bb24644567a64df0f357530d577b91ef852cf30093b6cc143f3a726dfa4ce357",
-      "manifest_hash": "sha256:3ad393796b132862e8c5284170be70325f7a3eea646f44b5e0566b611a58321e",
+      "manifest_hash": "sha256:def5d1f0e851274c133d2d8cb6d6ad99f17dc9b4735080da920438623ab67238",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -155,11 +167,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/random.bytes/0.1.0",
       "artifact": "sha256:b20169ce87d268995b3a0373b38c8c492044e6d46b3bdd749d0e36483f804a8b",
-      "manifest_hash": "sha256:b3de7d7157dba48a645c9a8e370c7a9d3e109700fea23995f42ab4fd91ccf362",
+      "manifest_hash": "sha256:b1bb49ec11c9fae1bd9ef47de8b35edb836e07036f9b8eb5cd8c0d2ab3e0868f",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -167,11 +180,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/receipt.verify/0.1.0",
       "artifact": "sha256:f6d3fe5dd4c11800a53289471930883ec7844ecd4a245f0c5829c5d77bd62b16",
-      "manifest_hash": "sha256:2f889307740e4c1bd9d3596538a4c91393da8daba942dc65c4d7f2197cb6ea27",
+      "manifest_hash": "sha256:f4dd36d5b9581421832c59725af6422b070d89675c44c58fef3bbe6050bc6b47",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -179,11 +193,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/retry.with_backoff/0.1.0",
       "artifact": "sha256:0a3f23e377912f8b3f0bf57b0caca2d9ec480d13804509f159e113b0ae5186f0",
-      "manifest_hash": "sha256:06ec42c986e1beb2431ae840af11ae199fc447b51f5e6269417406bc76dff2e9",
+      "manifest_hash": "sha256:a0907c95eee966fd06e2b4dcdc6c273606bb389b115efa1621734aea334527a0",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -191,11 +206,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/signature.verify/0.1.0",
       "artifact": "sha256:f0f2d270f8e430d8e87a4e53bf9ab627bfb0fc8eade9d4c0f0e885ca091071cc",
-      "manifest_hash": "sha256:c95f9443ee6a04b14bb25a6d70cb945ca985cbfd7e789aeb1d9789570df3cbb2",
+      "manifest_hash": "sha256:622d4d031bdd04d13d058a2151af634581fee4123e01e5ad91f1a85c0a9dfec1",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -203,11 +219,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/template.render/0.1.0",
       "artifact": "sha256:59591a71107ed956736611604b4a51931b19441af57f46ebfa2b54b834ca5b53",
-      "manifest_hash": "sha256:73175474fa5ed6bc83dbdc51047f492d95c9cd69a5c6a41bb0d23fd9511294d9",
+      "manifest_hash": "sha256:eeaccd445e8d02d3f40c7bfb9dea864ab86ab0e301c862e0dbaf7df3d0f2e884",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     },
     {
@@ -215,11 +232,12 @@
       "version": "0.1.0",
       "bundle_dir": "skills/time.now/0.1.0",
       "artifact": "sha256:6f64a5c12e4a9c43e3dc79b6cf993ab9b5208e45ec68680efa74351c2e5c3c23",
-      "manifest_hash": "sha256:704217231548e3de5b30c9ad3319fba7125eb3797d83decc17d7d49c344098c8",
+      "manifest_hash": "sha256:03c81a3e854c4773bd20e0db24aa75b2a54e53a5492a668583101d9a23f03e46",
       "keys_file": "public-keys.json",
-      "keys_digest": "sha256:64271b51eec6e259d66580c7db041d4b30f768a57a20e507f6f3ee8239c00b93",
+      "keys_digest": "sha256:9502bd8d0f5f073bfdc8f2aa2c30bad6db6284290beb2d644df1b00f6c13e9e2",
       "signers": [
-        "alice.dev"
+        "alice.dev",
+        "opertus.release"
       ]
     }
   ]

@@ -4,6 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LOCK_FILE="$ROOT_DIR/pins/skills.lock.json"
 INACTU_CLI_BIN="${INACTU_CLI_BIN:-}"
+MIN_SIGNERS="${MIN_SIGNERS:-2}"
 source "$ROOT_DIR/scripts/lib/inactu_cli.sh"
 
 resolve_inactu_cli "$ROOT_DIR"
@@ -38,6 +39,13 @@ for (const s of lock.skills) {
   MANIFEST_ARTIFACT="$(node -pe 'JSON.parse(require("fs").readFileSync(process.argv[1], "utf8")).artifact' "$BUNDLE_PATH/manifest.json")"
   SIG_MANIFEST_HASH="$(node -pe 'JSON.parse(require("fs").readFileSync(process.argv[1], "utf8")).manifest_hash' "$BUNDLE_PATH/signatures.json")"
   SIGNERS_ACTUAL="$(node -pe '(JSON.parse(require("fs").readFileSync(process.argv[1], "utf8")).signatures || []).map(s => s.signer).sort().join(",")' "$BUNDLE_PATH/signatures.json")"
+  SIGNER_COUNT="$(node -pe '(JSON.parse(require("fs").readFileSync(process.argv[1], "utf8")).signatures || []).map(s => s.signer).filter(Boolean).length' "$BUNDLE_PATH/signatures.json")"
+  UNIQUE_SIGNER_KEYS="$(node -e '
+const keys=JSON.parse(require("fs").readFileSync(process.argv[1], "utf8"));
+const signs=(JSON.parse(require("fs").readFileSync(process.argv[2], "utf8")).signatures || []);
+const vals=signs.map(s => keys[s.signer]).filter(Boolean);
+console.log(new Set(vals).size);
+' "$KEYS_PATH" "$BUNDLE_PATH/signatures.json")"
 
   if [[ "$MANIFEST_ARTIFACT" != "$EXPECT_ARTIFACT" ]]; then
     echo "error: $ID@$VERSION artifact mismatch" >&2
@@ -51,6 +59,16 @@ for (const s of lock.skills) {
 
   if [[ "$SIGNERS_ACTUAL" != "$EXPECT_SIGNERS" ]]; then
     echo "error: $ID@$VERSION signer set mismatch" >&2
+    exit 1
+  fi
+
+  if [[ "$SIGNER_COUNT" -lt "$MIN_SIGNERS" ]]; then
+    echo "error: $ID@$VERSION signer count $SIGNER_COUNT is below minimum $MIN_SIGNERS" >&2
+    exit 1
+  fi
+
+  if [[ "$UNIQUE_SIGNER_KEYS" -lt "$MIN_SIGNERS" ]]; then
+    echo "error: $ID@$VERSION has fewer than $MIN_SIGNERS unique signer keys" >&2
     exit 1
   fi
 

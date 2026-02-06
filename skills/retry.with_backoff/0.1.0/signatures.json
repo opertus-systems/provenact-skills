@@ -1,11 +1,16 @@
 {
   "artifact": "sha256:0a3f23e377912f8b3f0bf57b0caca2d9ec480d13804509f159e113b0ae5186f0",
-  "manifest_hash": "sha256:06ec42c986e1beb2431ae840af11ae199fc447b51f5e6269417406bc76dff2e9",
+  "manifest_hash": "sha256:a0907c95eee966fd06e2b4dcdc6c273606bb389b115efa1621734aea334527a0",
   "signatures": [
     {
       "signer": "alice.dev",
       "algorithm": "ed25519",
-      "signature": "PIWzywa1yAFlDD8NNeUZa8VBxsQ9sUdIF1J0l/GYsQAqSDQgFyJOBotFAf9E/dAtRh88kKqmvqY54WYqimVXBA=="
+      "signature": "taJX+sosF3Pzk450jSAQwR7i5Je/b1rhFh5r2yWlt+4/XG4gK7HyK45Bdk8SuHo2lbAc4iPpEaHzhGv6XudGDQ=="
+    },
+    {
+      "signer": "opertus.release",
+      "algorithm": "ed25519",
+      "signature": "k4FAffuRj81HmVv3lL9stEKx8P9sSfs/cbxnR+mFrNkSNYZAlgmFJ+gY0aKqd7Pqk/2+PbQfHMkXCO6yEb5oDw=="
     }
   ]
 }

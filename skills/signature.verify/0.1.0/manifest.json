@@ -5,6 +5,7 @@
   "artifact": "sha256:f0f2d270f8e430d8e87a4e53bf9ab627bfb0fc8eade9d4c0f0e885ca091071cc",
   "capabilities": [],
   "signers": [
-    "alice.dev"
+    "alice.dev",
+    "opertus.release"
   ]
 }

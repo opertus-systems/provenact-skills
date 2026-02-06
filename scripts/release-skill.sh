@@ -4,6 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LOCK_FILE="$ROOT_DIR/pins/skills.lock.json"
 INACTU_CLI_BIN="${INACTU_CLI_BIN:-}"
+MIN_SIGNERS="${MIN_SIGNERS:-2}"
 source "$ROOT_DIR/scripts/lib/inactu_cli.sh"
 
 SKILL_ID=""
@@ -131,6 +132,22 @@ KEYS_DIGEST="sha256:$(shasum -a 256 "$TARGET_DIR/$KEYS_FILE" | awk '{print $1}')
 ARTIFACT="$(node -pe 'JSON.parse(require("fs").readFileSync(process.argv[1], "utf8")).artifact' "$TARGET_DIR/manifest.json")"
 MANIFEST_HASH="$(node -pe 'JSON.parse(require("fs").readFileSync(process.argv[1], "utf8")).manifest_hash' "$TARGET_DIR/signatures.json")"
 SIGNERS="$(node -pe '(JSON.parse(require("fs").readFileSync(process.argv[1], "utf8")).signatures || []).map(s => s.signer).sort().join(",")' "$TARGET_DIR/signatures.json")"
+SIGNER_COUNT="$(node -pe '(JSON.parse(require("fs").readFileSync(process.argv[1], "utf8")).signatures || []).map(s => s.signer).filter(Boolean).length' "$TARGET_DIR/signatures.json")"
+UNIQUE_SIGNER_KEYS="$(node -e '
+const keys=JSON.parse(require("fs").readFileSync(process.argv[1], "utf8"));
+const signs=(JSON.parse(require("fs").readFileSync(process.argv[2], "utf8")).signatures || []);
+const vals=signs.map(s => keys[s.signer]).filter(Boolean);
+console.log(new Set(vals).size);
+' "$TARGET_DIR/$KEYS_FILE" "$TARGET_DIR/signatures.json")"
+
+if [[ "$SIGNER_COUNT" -lt "$MIN_SIGNERS" ]]; then
+  echo "error: signer count $SIGNER_COUNT is below minimum $MIN_SIGNERS" >&2
+  exit 1
+fi
+if [[ "$UNIQUE_SIGNER_KEYS" -lt "$MIN_SIGNERS" ]]; then
+  echo "error: unique signer key count $UNIQUE_SIGNER_KEYS is below minimum $MIN_SIGNERS" >&2
+  exit 1
+fi
 
 "$INACTU_CLI_BIN" verify \
   --bundle "$TARGET_DIR" \

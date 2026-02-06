@@ -5,6 +5,8 @@
 
 Immutable, signed base skills pinned for reproducible execution.
 
+Ecosystem map: `inactu/docs/ecosystem.md` in the substrate repository.
+
 This repository is for skill artifacts and pin metadata only.
 It does not include agent orchestration logic.
 
@@ -75,10 +77,19 @@ Current implementation note:
 ./scripts/verify_pins.sh
 ```
 
+Default policy enforces at least two signers backed by two unique public keys
+for every pinned bundle (`MIN_SIGNERS=2`).
+
 Optional binary override:
 
 ```bash
 INACTU_CLI_BIN=/path/to/inactu-cli ./scripts/verify_pins.sh
+```
+
+Optional signer threshold override:
+
+```bash
+MIN_SIGNERS=2 ./scripts/verify_pins.sh
 ```
 
 ## Release A Skill

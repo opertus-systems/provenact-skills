@@ -10,6 +10,7 @@
     }
   ],
   "signers": [
-    "alice.dev"
+    "alice.dev",
+    "opertus.release"
   ]
 }

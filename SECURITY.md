@@ -12,7 +12,9 @@ A pin is releasable only if:
 - `inactu-cli verify` succeeds,
 - `artifact` and `manifest_hash` match lock entries,
 - `keys_digest` matches lock entry,
-- expected signer IDs are present.
+- expected signer IDs are present,
+- at least two signatures are present, and
+- signatures map to at least two distinct public keys.
 
 ## Reporting
 
