@@ -4,4 +4,4 @@ This matrix pins `inactu-skills` lock state to tested substrate revisions.
 
 | Repo | Artifact | Substrate Repo | Substrate Pin | Status |
 | --- | --- | --- | --- | --- |
-| `inactu-skills` | `pins/skills.lock.json` | `inactu` | `9e8a46488a4690388fb430c78d08b4ca3cff4325` | tested |
+| `inactu-skills` | `pins/skills.lock.json` | `inactu` | `b45f54eaed1391bf88b9aadfc5083eda2bc3f0eb` | tested |
