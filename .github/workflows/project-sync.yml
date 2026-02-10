@@ -27,7 +27,7 @@ jobs:
             const projectId = process.env.PROVENACT_PROJECT_ID;
 
             if (!projectId) {
-              core.setFailed("Missing PROVENACT_PROJECT_ID repository variable.");
+              core.info("Missing PROVENACT_PROJECT_ID repository variable; skipping project sync.");
               return;
             }
 
