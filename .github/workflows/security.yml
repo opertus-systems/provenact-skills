@@ -15,7 +15,7 @@ jobs:
         working-directory: tools/watc
     steps:
       - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@4be9e76fd7c4901c61fb841f559994984270fce7
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout skills repo
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
 
       - name: Resolve substrate commit from lockfile
         id: substrate_pin
@@ -43,7 +43,7 @@ jobs:
           echo "commit=$COMMIT" >> "$GITHUB_OUTPUT"
 
       - name: Checkout substrate
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
         with:
           repository: ${{ github.repository_owner }}/provenact-cli
           ref: ${{ steps.substrate_pin.outputs.commit }}
